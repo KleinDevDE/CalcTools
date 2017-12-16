@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="325.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kleindev.calcTools.scenes.home.Home">
+   <children>
+      <Button fx:id="converterButton" layoutX="13.0" layoutY="222.0" mnemonicParsing="false" onAction="#onConverterButtonClick" prefHeight="50.0" prefWidth="209.0" text="Converter">
+         <font>
+            <Font name="Gill Sans MT" size="27.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="converterImage" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onConverterImageClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../tools/images/CarbonCopyCloner-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="calculatorButton" layoutX="13.0" layoutY="127.0" mnemonicParsing="false" onAction="#onCalculatorButtonClick" prefHeight="60.0" prefWidth="209.0" text="Calculator">
+         <font>
+            <Font name="Gill Sans MT" size="27.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="calculatorImage" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#onCalculatorImageClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../tools/images/calculator-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="infoImage" fitHeight="15.0" fitWidth="15.0" layoutX="4.0" layoutY="320.0" onMouseClicked="#onInfoImageClick">
+         <image>
+            <Image url="@../../tools/images/info.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ImageView>
+      <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../tools/images/icon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

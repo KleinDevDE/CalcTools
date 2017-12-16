@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kleindev.calcTools.scenes.info.Info">
+   <children>
+      <Label layoutX="51.0" layoutY="14.0" text="CalcTools">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gitHubImage" fitHeight="33.0" fitWidth="33.0" layoutX="203.0" layoutY="261.0" onMouseClicked="#onGitHubImageClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../tools/images/github.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="92.0" layoutY="259.0" text="Produced by" />
+      <Hyperlink fx:id="hyperLink" layoutX="92.0" layoutY="275.0" onAction="#onHyperLinkClick" text="Maximilian Klein" />
+   </children>
+</AnchorPane>
